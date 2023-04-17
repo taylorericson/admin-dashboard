@@ -13,7 +13,7 @@ svg {
     width: 100vw;
     height: 100vh;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 25% 75%;
 }
 
 /* HEADER */
@@ -45,7 +45,6 @@ svg {
     background-color: lightgray;
     border-style: none;
     border-radius: 10px;
-    margin-right: 15rem;
 }
 
 .account {
@@ -125,5 +124,48 @@ svg {
 /* MAIN CONTENT */
 
 .main-content {
+    display: grid;
+    grid-template-columns: 70% 30%;
     background-color: #e5e5e5;
+}
+
+.cards{
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    border-left: 5px solid goldenrod;
+    width: 90%;
+    height: 30%;
+    margin: 2rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 90%;
+    margin-top: 2rem;
+    gap: .5rem;
+}
+
+.card h6 {
+    font-size: 18px;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 0 1.5rem;
 }
